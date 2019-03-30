@@ -8,7 +8,7 @@ import java.time.LocalDate;
 public class PostbusAdresTypeBuilderTest {
 
     @Test
-    public void testFirst() {
+    public void testPostbusAdresTypeBuilder() {
         PostbusAdresType postbusAdresType = new PostbusAdresTypeBuilder()
                 .soortAdres("01")
                 .cjibAdresSoort("GBABA")
