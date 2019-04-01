@@ -1,15 +1,15 @@
 package nl.optimust.quicktest.builder;
 
-import nl.optimust.quicktest.entity.PostbusAdresType;
+import nl.optimust.quicktest.entity.StraatAdresType;
 import org.junit.Test;
 
 import java.time.LocalDate;
 
-public class PostbusAdresTypeBuilderTest {
+public class StraatAdresTypeBuilderTest {
 
     @Test
-    public void testPostbusAdresTypeBuilder() {
-        PostbusAdresType postbusAdresType = new PostbusAdresTypeBuilder()
+    public void testStraatAdresTypeBuilder() {
+        StraatAdresType straatAdresType = new StraatAdresTypeBuilder()
                 .soortAdres("01")
                 .cjibAdresSoort("GBABA")
                 .bronAdres("01")
@@ -18,8 +18,11 @@ public class PostbusAdresTypeBuilderTest {
                 .plaats("Velp")
                 .gemeente("Rheden")
                 .postcode("6880AA")
-                .postbusnummer(12345)
+                .straatnaam("Willemstraat")
+                .huisnummer(13)
+                .huisnummerToevoeging("A")
+                .indicatieVerwijzing("AB")
                 .build();
-        System.out.println(postbusAdresType);
+        System.out.println(straatAdresType);
     }
 }

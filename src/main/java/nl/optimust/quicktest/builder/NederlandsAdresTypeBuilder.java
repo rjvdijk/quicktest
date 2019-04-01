@@ -1,6 +1,5 @@
 package nl.optimust.quicktest.builder;
 
-import nl.optimust.quicktest.entity.AdresType;
 import nl.optimust.quicktest.entity.NederlandsAdresType;
 
 public class NederlandsAdresTypeBuilder<T extends NederlandsAdresTypeBuilder, U extends NederlandsAdresType> extends AdresTypeBuilder<T, U> {
